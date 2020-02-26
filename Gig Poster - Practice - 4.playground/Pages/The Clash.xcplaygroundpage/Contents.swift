@@ -32,8 +32,16 @@ let offWhite = Color(hue: 208, saturation: 1, brightness: 88, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your work below...
+//create orange rectangle to be the background
+canvas.drawShapesWithBorders = false
+canvas.fillColor = orange
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+//translate the origin
+canvas.translate(to: Point(x: 170, y: 380))
 
+//draw axes to check the origin
+canvas.drawAxes()
 /*:
  ## Use Source Control
  
